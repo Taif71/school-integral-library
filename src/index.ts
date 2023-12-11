@@ -20,6 +20,7 @@ export * from './common/dto';
 export * from './common/interfaces';
 export * from './common/schemas';
 export * from './common/utils';
+export * from './common/filters';
 
 
 
