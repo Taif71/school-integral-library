@@ -1,4 +1,4 @@
-export enum queue {
+export enum QUEUES {
     PARTNERS_QUEUE = 'partners_queue',
     USERS_QUEUE = 'users_queue'
 }
