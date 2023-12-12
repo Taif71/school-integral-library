@@ -19,9 +19,6 @@ export class VerificationDTO implements Readonly<VerificationDTO> {
     password: string;
 
     @ApiProperty()
-    token: string;
-
-    @ApiProperty()
     agreementOfDataPolicy: boolean;
 
     @ApiProperty()
