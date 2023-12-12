@@ -6,13 +6,15 @@ export type MobileDocument = Mobile & Document;
 
 @Schema()
 export class Mobile {
-  @Prop({ default: MobilePrefixes.USA, minlength: 1, maxlength: 6 })
+  @Prop({
+    minlength: 1,
+    maxlength: 6
+  })
   countryCode: string;
 
   @Prop({
     minlength: 6,
     maxlength: 17,
-    sparse: true,
   })
   mobile: string;
 

@@ -51,5 +51,8 @@ export class UpdateUserDTO implements Readonly<UpdateUserDTO> {
   isRegistered: boolean;
 
   @ApiProperty()
+  isAcceptAgreement: boolean;
+
+  @ApiProperty()
   timezone: string;
 }

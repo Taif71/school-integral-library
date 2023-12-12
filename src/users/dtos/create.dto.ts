@@ -9,7 +9,7 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
-import { Mobile, MobileDTO } from '../../common';
+import { IMobile, MobileDTO } from '../../common';
 
 export class CreateUserDTO implements Readonly<CreateUserDTO> {
   @ApiProperty({
@@ -42,8 +42,5 @@ export class CreateUserDTO implements Readonly<CreateUserDTO> {
   })
   @ValidateNested({ each: true })
   @Type(() => MobileDTO)
-  mobile: Mobile;
-
-  @ApiProperty()
-  isAcceptAgreement: boolean;
+  mobile: IMobile;
 }
