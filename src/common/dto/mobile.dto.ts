@@ -1,4 +1,4 @@
-import { IsString, MaxLength, MinLength } from 'class-validator';
+import { IsBoolean, IsString, MaxLength, MinLength } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class MobileDTO implements Readonly<MobileDTO> {
@@ -15,14 +15,18 @@ export class MobileDTO implements Readonly<MobileDTO> {
   mobile: string;
 
   @ApiProperty()
+  @IsBoolean()
   isVerified: boolean;
 
   @ApiProperty()
+  @IsBoolean()
   isVisible: boolean;
 
   @ApiProperty()
+  @IsBoolean()
   isPrimary: boolean;
 
   @ApiProperty()
+  @IsBoolean()
   isDeleted: boolean;
 }
