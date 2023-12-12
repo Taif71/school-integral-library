@@ -11,7 +11,6 @@ export interface IUser {
     readonly passwordResetToken: string;
     readonly passwordResetTokenExpiresAt: number;
     readonly firstName: string;
-    readonly middleName: string;
     readonly lastName: string;
     readonly mobile: IMobile;
     readonly isActive: boolean;
@@ -19,6 +18,7 @@ export interface IUser {
     readonly isSuperAdmin: boolean;
     readonly isVerified: boolean;
     readonly isRegistered: boolean;
+    readonly isAcceptAgreement: boolean;
     readonly isDeleted: boolean;
     readonly cTime: number;
     readonly cBy: string;

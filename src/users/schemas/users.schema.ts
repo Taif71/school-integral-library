@@ -42,13 +42,6 @@ export class User {
   @Prop({
     minlength: 3,
     maxlength: 30,
-    required: false,
-  })
-  middleName: string;
-
-  @Prop({
-    minlength: 3,
-    maxlength: 30,
   })
   lastName: string;
 
@@ -71,6 +64,9 @@ export class User {
 
   @Prop({ default: true })
   isRegistered: boolean;
+
+  @Prop({ default: true })
+  isAcceptAgreement: boolean;
 
   @Prop({ default: false })
   isDeleted: boolean;
@@ -97,7 +93,6 @@ UserSchema.set('toJSON', {
       _id: ret._id,
       email: ret.email,
       firstName: ret.firstName,
-      middleName: ret.middleName,
       lastName: ret.lastName,
       mobile: ret.mobile,
       isActive: ret.isActive,

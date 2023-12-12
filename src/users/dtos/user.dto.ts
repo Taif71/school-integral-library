@@ -5,7 +5,6 @@ import {
   Matches,
   IsNotEmpty,
   IsEmail,
-  IsOptional,
   ValidateNested
 } from 'class-validator';
 import { Type } from 'class-transformer';
@@ -61,14 +60,6 @@ export class UserDTO implements Readonly<UserDTO> {
   @MinLength(3)
   @Matches(/^[a-zA-Z ]+$/)
   @IsString()
-  @IsOptional()
-  middleName: string;
-
-  @ApiProperty()
-  @MaxLength(30)
-  @MinLength(3)
-  @Matches(/^[a-zA-Z ]+$/)
-  @IsString()
   lastName: string;
 
   @ApiProperty({
@@ -95,6 +86,9 @@ export class UserDTO implements Readonly<UserDTO> {
 
   @ApiProperty()
   isRegistered: boolean;
+
+  @ApiProperty()
+  isAcceptAgreement: boolean;
 
   @ApiProperty()
   cTime: number;

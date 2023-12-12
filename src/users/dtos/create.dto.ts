@@ -5,11 +5,11 @@ import {
   Matches,
   IsNotEmpty,
   IsEmail,
-  IsBoolean,
-  IsEnum,
-  IsOptional,
+  ValidateNested
 } from 'class-validator';
+import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
+import { Mobile, MobileDTO } from '../../common';
 
 export class CreateUserDTO implements Readonly<CreateUserDTO> {
   @ApiProperty({
@@ -18,16 +18,6 @@ export class CreateUserDTO implements Readonly<CreateUserDTO> {
   @IsNotEmpty()
   @IsEmail()
   email: string;
-
-  @ApiProperty({
-    example: '8tJ!ACq7fXg6@#',
-  })
-  @IsNotEmpty()
-  @IsString()
-  @MaxLength(15)
-  @MinLength(5)
-  @Matches(/^[^\s]+(\s+[^\s]+)*$/)
-  password: string;
 
   @ApiProperty({
     example: 'John',
@@ -39,16 +29,6 @@ export class CreateUserDTO implements Readonly<CreateUserDTO> {
   firstName: string;
 
   @ApiProperty({
-    example: 'Howard',
-  })
-  @MaxLength(30)
-  @MinLength(3)
-  @Matches(/^[a-zA-Z ]+$/)
-  @IsString()
-  @IsOptional()
-  middleName: string;
-
-  @ApiProperty({
     example: 'Smith',
   })
   @MaxLength(30)
@@ -56,4 +36,14 @@ export class CreateUserDTO implements Readonly<CreateUserDTO> {
   @Matches(/^[a-zA-Z ]+$/)
   @IsString()
   lastName: string;
+
+  @ApiProperty({
+    type: MobileDTO,
+  })
+  @ValidateNested({ each: true })
+  @Type(() => MobileDTO)
+  mobile: Mobile;
+
+  @ApiProperty()
+  isAcceptAgreement: boolean;
 }
