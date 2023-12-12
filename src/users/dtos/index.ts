@@ -5,3 +5,4 @@ export * from './reset-password.dto';
 export * from './search.dto';
 export * from './update.dto';
 export * from './user.dto';
+export * from './verification.dto';

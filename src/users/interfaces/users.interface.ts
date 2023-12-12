@@ -18,7 +18,9 @@ export interface IUser {
     readonly isSuperAdmin: boolean;
     readonly isVerified: boolean;
     readonly isRegistered: boolean;
-    readonly isAcceptAgreement: boolean;
+    readonly agreementOfDataPolicy: boolean;
+    readonly consentForDataDocumentation: boolean;
+    readonly consentForDataProtection: boolean;
     readonly isDeleted: boolean;
     readonly cTime: number;
     readonly cBy: string;

@@ -65,8 +65,14 @@ export class User {
   @Prop({ default: true })
   isRegistered: boolean;
 
-  @Prop({ default: true })
-  isAcceptAgreement: boolean;
+  @Prop()
+  agreementOfDataPolicy: boolean;
+
+  @Prop()
+  consentForDataDocumentation: boolean;
+
+  @Prop()
+  consentForDataProtection: boolean;
 
   @Prop({ default: false })
   isDeleted: boolean;
