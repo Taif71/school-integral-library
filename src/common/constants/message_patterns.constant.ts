@@ -25,7 +25,8 @@ export enum COUNTRY_MESSAGES {
     FIND_ALL = 'country-get-all',
     FIND_ONE = 'country-get-one',
     DELETE = 'country-delete',
-    COUNT = 'country-count'
+    COUNT = 'country-count',
+    BULK_CREATE = 'bulk-create'
 }
 
 export enum STATE_MESSAGES {
@@ -34,7 +35,8 @@ export enum STATE_MESSAGES {
     FIND_ALL = 'state-get-all',
     FIND_ONE = 'state-get-one',
     DELETE = 'state-delete',
-    COUNT = 'state-count'
+    COUNT = 'state-count',
+    BULK_CREATE = 'bulk-create'
 }
 
 export enum CITY_MESSAGES {
@@ -43,5 +45,6 @@ export enum CITY_MESSAGES {
     FIND_ALL = 'city-get-all',
     FIND_ONE = 'city-get-one',
     DELETE = 'city-delete',
-    COUNT = 'city-count'
+    COUNT = 'city-count',
+    BULK_CREATE = 'bulk-create'
 }
