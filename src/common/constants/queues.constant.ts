@@ -1,4 +1,5 @@
 export enum QUEUES {
-    PARTNERS_QUEUE = 'partners_queue',
-    USERS_QUEUE = 'users_queue'
+    PARTNERS = 'partners_queue',
+    USERS = 'users_queue',
+    DEMOGRAPHICS = 'demographics_queue',
 }
