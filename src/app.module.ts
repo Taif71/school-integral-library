@@ -5,6 +5,7 @@ import { PartnersModule } from './partners/partners.module';
 import 'dotenv/config';
 import { UsersModule } from './users/users.module';
 import { DemographicsModule } from './demographics/demographics.module';
+import { RepresentativesModule } from './representatives/representatives.module';
 
 @Module({
   imports: [
@@ -12,7 +13,8 @@ import { DemographicsModule } from './demographics/demographics.module';
     MongooseModule.forRoot(process.env.DB_MONGO),
     PartnersModule,
     UsersModule,
-    DemographicsModule
+    DemographicsModule,
+    RepresentativesModule
   ],
   controllers: [],
   providers: [],
