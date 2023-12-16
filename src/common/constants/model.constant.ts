@@ -3,5 +3,6 @@ export enum MODELS {
     PARTNERS = 'partners',
     COUNTRIES = 'countries',
     STATES = 'states',
-    CITIES = 'cities,'
+    CITIES = 'cities,',
+    REPRESENTATIVE = 'representatives'
 }

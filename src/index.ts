@@ -14,6 +14,9 @@ export * from './demographics/dto';
 export * from './demographics/interfaces';
 export * from './demographics/schemas';
 
+// representative
+export * from './representatives/schemas';
+
 // common
 export * from './common/constants';
 export * from './common/dto';
