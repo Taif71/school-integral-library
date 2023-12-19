@@ -48,3 +48,17 @@ export enum CITY_MESSAGES {
     COUNT = 'city-count',
     BULK_CREATE = 'bulk-create'
 }
+
+export enum FILES_MESSAGES {
+    UPLOAD = 'upload'
+}
+
+export enum SCHOOL_MESSAGES {
+    CREATE = 'school-create',
+    UPDATE = 'school-update',
+    FIND_ALL = 'school-get-all',
+    FIND_ONE = 'school-get-one',
+    DELETE = 'school-delete',
+    COUNT = 'school-count',
+    BULK_CREATE = 'bulk-create'
+}
