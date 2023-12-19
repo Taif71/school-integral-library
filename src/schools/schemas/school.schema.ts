@@ -1,6 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import { LocationDocument, LocationSchema } from '../../common/schemas';
+import { SchoolOwnershipDocument, SchoolOwnershipSchema } from './ownership.schema';
 
 export type SchoolDocument = School & Document;
 
@@ -13,7 +14,7 @@ export class School {
   name: string;
 
   @Prop({ required: true })
-  ownership: string;
+  ownershipType: string;
 
   @Prop({ required: true })
   category: string;
@@ -31,6 +32,11 @@ export class School {
     type: LocationSchema,
   })
   address: LocationDocument;
+
+  @Prop({
+    type: SchoolOwnershipSchema,
+  })
+  ownership: SchoolOwnershipDocument;
 
   @Prop({ default: false })
   isDeleted: boolean;
