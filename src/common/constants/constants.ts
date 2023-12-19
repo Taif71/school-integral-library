@@ -28,13 +28,20 @@ export enum MobilePrefixes {
 }
 
 export enum Location_Type {
-    
+    RURAL = 'Rural',
+    URBAN = 'Urban'
 }
 
 export enum Location_Area {
-    
+    RESIDENTIAL_AREA = 'Residential Area',
+    CITY_TOWN_CENTER = 'City/Town Center',
+    COMMERCIAL_AREA = 'Commercial Area',
+    INDUSTRIAL_AREA = 'Industrial Area',
 }
 
 export enum Location_Description {
-    
+    OPPOSITE = 'Opposite',
+    NEAR = 'Near',
+    BEHIND = 'Behind',
+    INSIDE = 'Inside',
 }
