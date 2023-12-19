@@ -34,7 +34,7 @@ export class Attestation {
     @Prop({
         type: MediaSchema,
     })
-    Signature: MediaDocument;
+    signature: MediaDocument;
 
     @Prop({ default: false })
     isDeleted: boolean;

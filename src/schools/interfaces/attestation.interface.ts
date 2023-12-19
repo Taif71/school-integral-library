@@ -7,6 +7,6 @@ export interface IAttestation {
     readonly email: string;
     readonly date: number;    
     readonly mobile: IMobile;
-    readonly Signature: IMedia;
+    readonly signature: IMedia;
     readonly isDeleted: boolean;
   }

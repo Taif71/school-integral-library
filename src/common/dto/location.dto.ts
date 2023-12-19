@@ -5,10 +5,24 @@ import {
   IsString,
   MaxLength,
   MinLength,
+  IsEnum
 } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
+import { Location_Type, Location_Area } from '../../common'
 
 export class LocationDTO implements Readonly<LocationDTO> {
+  @ApiProperty({
+    enum: Location_Type,
+  })
+  @IsEnum(Location_Type)
+  locationType: string;
+
+  @ApiProperty({
+    enum: Location_Area,
+  })
+  @IsEnum(Location_Area)
+  area: string;
+
   @ApiProperty()
   @MinLength(2)
   @MaxLength(300)
@@ -17,7 +31,7 @@ export class LocationDTO implements Readonly<LocationDTO> {
 
   @ApiProperty()
   @IsMongoId()
-  city: string;
+  localGovnArea: string;
 
   @ApiProperty()
   @IsMongoId()
@@ -28,8 +42,20 @@ export class LocationDTO implements Readonly<LocationDTO> {
   country: string;
 
   @ApiProperty()
+  town: string;
+
+  @ApiProperty()
   @IsString()
   zipCode: string;
+
+  @ApiProperty()
+  avgDistancefromCatchmentAreas: number;
+
+  @ApiProperty()
+  landmark: string;
+
+  @ApiProperty()
+  description: string;
 
   @ApiProperty()
   lat: number;
