@@ -6,6 +6,7 @@ import 'dotenv/config';
 import { UsersModule } from './users/users.module';
 import { DemographicsModule } from './demographics/demographics.module';
 import { RepresentativesModule } from './representatives/representatives.module';
+import { SchoolsModule } from './schools/schools.module';
 
 @Module({
   imports: [
@@ -14,7 +15,8 @@ import { RepresentativesModule } from './representatives/representatives.module'
     PartnersModule,
     UsersModule,
     DemographicsModule,
-    RepresentativesModule
+    RepresentativesModule,
+    SchoolsModule
   ],
   controllers: [],
   providers: [],

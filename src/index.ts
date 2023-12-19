@@ -24,6 +24,7 @@ export * from './common/interfaces';
 export * from './common/schemas';
 export * from './common/utils';
 export * from './common/filters';
+export * from './common/db_configs';
 
 
 

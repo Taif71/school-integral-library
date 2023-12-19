@@ -1,11 +1,18 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
 import { CountryDocument, StateDocument, CityDocument } from '../../demographics/schemas';
+import { MODELS } from '../constants';
 
 export type LocationDocument = Location & Document;
 
 @Schema()
 export class Location {
+  @Prop()
+  locationType: string;
+
+  @Prop()
+  area: string;
+
   @Prop({
     maxlength: 300,
   })
@@ -13,24 +20,36 @@ export class Location {
 
   @Prop({
     type: SchemaTypes.ObjectId,
-    ref: 'City',
+    ref: MODELS.CITIES,
   })
-  city: CityDocument;
+  localGovnArea: CityDocument;
 
   @Prop({
     type: SchemaTypes.ObjectId,
-    ref: 'State',
+    ref: MODELS.STATES,
   })
   state: StateDocument;
 
   @Prop({
     type: SchemaTypes.ObjectId,
-    ref: 'Country',
+    ref: MODELS.COUNTRIES,
   })
   country: CountryDocument;
 
   @Prop()
+  town: string;
+
+  @Prop()
   zipCode: string;
+
+  @Prop()
+  avgDistancefromCatchmentAreas: number;
+
+  @Prop()
+  landmark: string;
+
+  @Prop()
+  description: string;
 
   @Prop()
   lat: number;

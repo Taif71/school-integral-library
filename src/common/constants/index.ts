@@ -3,3 +3,4 @@ export * from './queues.constant';
 export * from './model.constant';
 export * from './constants';
 export * from './country-with-continents.constant';
+export * from './school.constant';

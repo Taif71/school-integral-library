@@ -4,5 +4,6 @@ export enum MODELS {
     COUNTRIES = 'countries',
     STATES = 'states',
     CITIES = 'cities,',
-    REPRESENTATIVE = 'representatives'
+    REPRESENTATIVE = 'representatives',
+    SCHOOL = 'schools'
 }
