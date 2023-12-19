@@ -10,7 +10,7 @@ export type MembershipDocument = Membership & Document;
 })
 export class Membership {
     @Prop({ required: true })
-    namey: string;
+    name: string;
 
     @Prop()
     yearOfMembership: number;

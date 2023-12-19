@@ -17,6 +17,7 @@ import {
   AttestationDocument,
   AttestationSchema
 } from './attestation.schema';
+import { CATEGORY, OWNERSHIP, TYPE } from '../../common';
 
 export type SchoolDocument = School & Document;
 
@@ -28,20 +29,20 @@ export class School {
   @Prop({ required: true, unique: true })
   name: string;
 
-  @Prop({ required: true })
+  @Prop({ required: true, enum: OWNERSHIP })
   ownershipType: string;
 
-  @Prop({ required: true })
+  @Prop({ required: true, enum: CATEGORY })
   category: string;
 
-  @Prop({ required: true })
+  @Prop({ required: true, enum: TYPE })
   type: string;
 
   @Prop({ required: true })
   code: string;
 
   @Prop()
-  additionalId: number;
+  additionalId: string;
 
   @Prop({
     type: LocationSchema,
@@ -82,7 +83,7 @@ export class School {
   @Prop({
     type: AttestationSchema,
   })
-  Attestation: AttestationDocument;  
+  attestation: AttestationDocument;  
 
   @Prop({ default: false })
   isDeleted: boolean;

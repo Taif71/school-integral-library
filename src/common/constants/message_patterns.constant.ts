@@ -55,7 +55,8 @@ export enum FILES_MESSAGES {
 
 export enum SCHOOL_MESSAGES {
     CREATE = 'school-create',
-    UPDATE = 'school-update',
+    UPDATE_PUT = 'school-update-put',
+    UPDATE_PATCH = 'school-update-patch',
     FIND_ALL = 'school-get-all',
     FIND_ONE = 'school-get-one',
     DELETE = 'school-delete',

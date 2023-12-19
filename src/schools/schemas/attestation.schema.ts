@@ -20,11 +20,11 @@ export class Attestation {
     @Prop()
     designation: string;
 
-    @Prop()
-    date: number;
-
     @Prop({ required: true, unique: true })
     email: string;
+
+    @Prop()
+    date: number;
 
     @Prop({
         type: MobileSchema,

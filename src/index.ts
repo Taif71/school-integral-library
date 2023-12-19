@@ -25,5 +25,9 @@ export * from './common/schemas';
 export * from './common/utils';
 export * from './common/filters';
 
+// school
+export * from './schools/schemas';
+export * from './schools/interfaces';
+
 
 
