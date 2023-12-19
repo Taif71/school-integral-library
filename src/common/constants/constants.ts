@@ -26,3 +26,15 @@ export enum MobilePrefixes {
     Canada = '+1',
     USA = '+1',
 }
+
+export enum Location_Type {
+    
+}
+
+export enum Location_Area {
+    
+}
+
+export enum Location_Description {
+    
+}
