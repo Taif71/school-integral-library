@@ -6,5 +6,6 @@ export enum MODELS {
     CITIES = 'cities,',
     REPRESENTATIVE = 'representatives',
     SCHOOL = 'schools',
-    SCHOOL_STAFF = 'school_staffs'
+    SCHOOL_STAFF = 'school_staffs',
+    SUBJECT = 'subjects'
 }
