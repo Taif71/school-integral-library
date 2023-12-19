@@ -38,6 +38,12 @@ export class School {
   })
   ownership: SchoolOwnershipDocument;
 
+  @Prop()
+  curriculams: string[];
+
+  @Prop()
+  specialPrograms: string[];
+
   @Prop({ default: false })
   isDeleted: boolean;
 
