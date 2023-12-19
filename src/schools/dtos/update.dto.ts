@@ -23,11 +23,7 @@ import { ComplianceDTO } from './compliance.dto';
 import { MembershipDTO } from './membership.dto';
 import { AttestationDTO } from './attestation.dto';
 
-export class SchoolDTO implements Readonly<SchoolDTO> {
-    @ApiProperty()
-    @IsString()
-    name: string;
-
+export class UpdateSchoolDTO implements Readonly<UpdateSchoolDTO> {
     @ApiProperty({
         enum: OWNERSHIP,
     })
@@ -109,16 +105,4 @@ export class SchoolDTO implements Readonly<SchoolDTO> {
 
     @ApiProperty()
     isDeleted: boolean;
-
-    @ApiProperty()
-    cTime: number;
-
-    @ApiProperty()
-    cBy: string;
-
-    @ApiProperty()
-    uTime: number;
-
-    @ApiProperty()
-    uBy: string;
 }
