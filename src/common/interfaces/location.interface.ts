@@ -15,7 +15,7 @@ export interface ILocation {
   readonly description: string;
   readonly lat: number;
   readonly lng: number;
-  readonly type: string;
-  readonly coordinates: number[];
+  type: string;
+  coordinates: number[];
   readonly isDeleted: boolean;
 }

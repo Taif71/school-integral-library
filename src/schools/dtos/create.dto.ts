@@ -48,4 +48,8 @@ export class CreateSchoolDTO implements Readonly<CreateSchoolDTO> {
     @ValidateNested({ each: true })
     @Type(() => LocationDTO)
     address: ILocation;
+
+    @ApiProperty()
+    @IsString()
+    timezone: string;
 }

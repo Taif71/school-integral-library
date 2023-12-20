@@ -11,11 +11,11 @@ import {
     ILocation,
     LocationDTO
 } from '../../common';
-import { 
-    IAttestation, 
-    ICompliance, 
-    IMembership, 
-    ISchoolOwnership 
+import {
+    IAttestation,
+    ICompliance,
+    IMembership,
+    ISchoolOwnership
 } from '../interfaces';
 import { OwnershipDTO } from './ownership.dto';
 import { ComplianceDTO } from './compliance.dto';
@@ -104,4 +104,7 @@ export class UpdateSchoolDTO implements Readonly<UpdateSchoolDTO> {
 
     @ApiProperty()
     isDeleted: boolean;
+
+    @ApiProperty()
+    timezone: string;
 }
