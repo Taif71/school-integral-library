@@ -1,5 +1,4 @@
 import {
-    IsString,
     ValidateNested,
     IsEnum
 } from 'class-validator';
