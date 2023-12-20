@@ -55,13 +55,11 @@ export enum FILES_MESSAGES {
 
 export enum SCHOOL_MESSAGES {
     CREATE = 'school-create',
-    UPDATE_PUT = 'school-update-put',
-    UPDATE_PATCH = 'school-update-patch',
+    UPDATE = 'school-update',
     FIND_ALL = 'school-get-all',
     FIND_ONE = 'school-get-one',
     DELETE = 'school-delete',
     COUNT = 'school-count',
-    BULK_CREATE = 'bulk-create'
 }
 
 export enum REPRESENTATIVE_MESSAGES {
