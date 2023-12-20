@@ -1,4 +1,3 @@
-
 // partners
 export * from './partners/dtos';
 export * from './partners/interfaces';
@@ -16,6 +15,8 @@ export * from './demographics/schemas';
 
 // representative
 export * from './representatives/schemas';
+export * from './representatives/dto';
+export * from './representatives/interfaces';
 
 // common
 export * from './common/constants';
@@ -29,6 +30,3 @@ export * from './common/filters';
 export * from './schools/dtos';
 export * from './schools/schemas';
 export * from './schools/interfaces';
-
-
-
