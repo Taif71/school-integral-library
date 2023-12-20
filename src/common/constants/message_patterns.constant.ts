@@ -63,3 +63,11 @@ export enum SCHOOL_MESSAGES {
     COUNT = 'school-count',
     BULK_CREATE = 'bulk-create'
 }
+
+export enum REPRESENTATIVE_MESSAGES {
+    CREATE = 'representative-create',
+    UPDATE = 'representative-update',
+    FIND_ALL = 'representative-get-all',
+    FIND_ONE = 'representative-get-one',
+    DELETE = 'representative-delete'
+}
