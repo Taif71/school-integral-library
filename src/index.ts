@@ -35,3 +35,9 @@ export * from './schools/interfaces';
 export * from './school-staffs/dtos';
 export * from './school-staffs/interfaces';
 export * from './school-staffs/schemas';
+
+// arms
+export * from './classes/arms/dtos';
+export * from './classes/arms/interfaces';
+export * from './classes/arms/schemas';
+
