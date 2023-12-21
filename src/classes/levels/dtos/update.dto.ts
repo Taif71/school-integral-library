@@ -27,7 +27,7 @@ export class UpdateLevelDTO implements Readonly<UpdateLevelDTO> {
 
     @ApiProperty()
     @IsString()
-    GradingFormat: string;
+    gradingFormat: string;
 
     @ApiProperty({
         type: [ArmForLevelDTO],
@@ -36,4 +36,8 @@ export class UpdateLevelDTO implements Readonly<UpdateLevelDTO> {
     @ValidateNested({ each: true })
     @Type(() => ArmForLevelDTO)
     arms: [ArmForLevel];
+
+    @ApiProperty()
+    @IsString()
+    timezone: string;
 }

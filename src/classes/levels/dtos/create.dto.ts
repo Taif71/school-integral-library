@@ -27,7 +27,7 @@ export class CreateLevelDTO implements Readonly<CreateLevelDTO> {
 
     @ApiProperty()
     @IsString()
-    GradingFormat: string;
+    gradingFormat: string;
 
     @ApiProperty({
         type: [ArmForLevelDTO],
@@ -36,4 +36,8 @@ export class CreateLevelDTO implements Readonly<CreateLevelDTO> {
     @ValidateNested({ each: true })
     @Type(() => ArmForLevelDTO)
     arms: [ArmForLevel];
+
+    @ApiProperty()
+    @IsString()
+    timezone: string;
 }

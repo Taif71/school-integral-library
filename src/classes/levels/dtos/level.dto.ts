@@ -27,7 +27,7 @@ export class LevelDTO implements Readonly<LevelDTO> {
 
     @ApiProperty()
     @IsString()
-    GradingFormat: string;
+    gradingFormat: string;
 
     @ApiProperty({
         type: [ArmForLevelDTO],

@@ -6,7 +6,7 @@ export interface ILevel {
   readonly category: string;
   readonly year: number;
   readonly assessmentFormat: string;
-  readonly GradingFormat: string;
+  readonly gradingFormat: string;
   readonly arms: IArmForLevel;
   readonly isDeleted: boolean;
 }

@@ -22,7 +22,7 @@ export class Level {
   assessmentFormat: string;
 
   @Prop()
-  GradingFormat: string;
+  gradingFormat: string;
 
   @Prop({
     type: [ArmForLevelSchema],
