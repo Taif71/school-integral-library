@@ -67,6 +67,14 @@ StateSchema.virtual('cities', {
   match: { isActive: true, isDeleted: false },
 });
 
+StateSchema.virtual('representatives', {
+  ref: MODELS.REPRESENTATIVE,
+  localField: '_id',
+  foreignField: 'state',
+  options: { sort: { name: 1 } },
+  match: { isActive: true, isDeleted: false },
+});
+
 StateSchema.set('toJSON', {
   virtuals: true,
   transform: function (doc, ret) {
