@@ -3,7 +3,7 @@ import {
 } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
-export class UpdateArmsDTO implements Readonly<UpdateArmsDTO> {
+export class UpdateArmDTO implements Readonly<UpdateArmDTO> {
     @ApiProperty()
     @IsString()
     name: string;

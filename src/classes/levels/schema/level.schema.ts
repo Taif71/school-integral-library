@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { ArmsForLevel, ArmsForLevelSchema } from './armsForLevel.schema';
+import { ArmsForLevel, ArmsForLevelSchema } from './armForLevel.schema';
 
 export type LevelDocument = Level & Document;
 

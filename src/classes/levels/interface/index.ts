@@ -1,2 +1,2 @@
-export * from './arms.interface';
+export * from './level.interface';
 export * from './paginate.interface';

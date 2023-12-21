@@ -1,5 +1,5 @@
 import { SearchQueryDTO } from '../../../common/dto';
 
-export class SearchArmsDTO
+export class SearchArmDTO
     extends SearchQueryDTO
-    implements Readonly<SearchArmsDTO> { }
+    implements Readonly<SearchArmDTO> { }

@@ -1,14 +1,13 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
-import { MODELS } from '../../../common';
 
-export type ArmsDocument = Arms & Document;
+export type ArmDocument = Arm & Document;
 
 @Schema({
     toJSON: { virtuals: true, getters: true },
     toObject: { virtuals: true, getters: true },
 })
-export class Arms {
+export class Arm {
     @Prop()
     name: string;
 
@@ -28,4 +27,4 @@ export class Arms {
     uBy: string;
 }
 
-export const ArmsSchema = SchemaFactory.createForClass(Arms);
+export const ArmSchema = SchemaFactory.createForClass(Arm);

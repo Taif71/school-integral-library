@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
-import { Arms } from '../../arms/schemas';
+import { Arm } from '../../arms/schemas';
 import { MODELS } from '../../../common';
 
 export type ArmsForLevelDocument = ArmsForLevel & Document;
@@ -16,7 +16,7 @@ export class ArmsForLevel {
         required: true,
         immutable: true,
     })
-    arms: Arms;
+    arm: Arm;
 
     @Prop()
     room: number;

@@ -4,7 +4,7 @@ import {
 import { ApiProperty } from '@nestjs/swagger';
 
 
-export class ArmsDTO implements Readonly<ArmsDTO> {
+export class ArmDTO implements Readonly<ArmDTO> {
     @ApiProperty()
     @IsString()
     name: string;
