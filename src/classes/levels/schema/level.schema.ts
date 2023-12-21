@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { ArmsForLevel, ArmsForLevelSchema } from './armForLevel.schema';
+import { ArmForLevel, ArmForLevelSchema } from './armForLevel.schema';
 
 export type LevelDocument = Level & Document;
 
@@ -25,10 +25,10 @@ export class Level {
   GradingFormat: string;
 
   @Prop({
-    type: [ArmsForLevelSchema],
+    type: [ArmForLevelSchema],
     default: undefined
   })
-  arms: ArmsForLevel[];
+  arms: ArmForLevel[];
 
   @Prop({ default: false })
   isDeleted: boolean;

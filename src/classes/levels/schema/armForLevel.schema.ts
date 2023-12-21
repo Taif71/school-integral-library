@@ -3,13 +3,13 @@ import { Document, SchemaTypes } from 'mongoose';
 import { Arm } from '../../arms/schemas';
 import { MODELS } from '../../../common';
 
-export type ArmsForLevelDocument = ArmsForLevel & Document;
+export type ArmForLevelDocument = ArmForLevel & Document;
 
 @Schema({
     toJSON: { virtuals: true, getters: true },
     toObject: { virtuals: true, getters: true },
 })
-export class ArmsForLevel {
+export class ArmForLevel {
     @Prop({
         type: SchemaTypes.ObjectId,
         ref: MODELS.ARMS,
@@ -25,4 +25,4 @@ export class ArmsForLevel {
     isDeleted: boolean;
 }
 
-export const ArmsForLevelSchema = SchemaFactory.createForClass(ArmsForLevel);
+export const ArmForLevelSchema = SchemaFactory.createForClass(ArmForLevel);

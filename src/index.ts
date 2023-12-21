@@ -41,3 +41,8 @@ export * from './classes/arms/dtos';
 export * from './classes/arms/interfaces';
 export * from './classes/arms/schemas';
 
+// level
+export * from './classes/levels/dtos';
+export * from './classes/levels/interface';
+export * from './classes/levels/schema';
+
