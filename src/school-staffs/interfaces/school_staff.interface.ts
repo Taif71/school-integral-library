@@ -1,5 +1,5 @@
 import { IMobile } from "../../common";
-import { ISchool } from "./school.interface";
+import { ISchool } from "../../schools/interfaces/school.interface";
 
 export interface ISchoolStaff {
     readonly _id: string;

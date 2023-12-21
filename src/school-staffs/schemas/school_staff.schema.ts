@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
 import { MobileDocument, MobileSchema } from '../../common/schemas';
 import { MODELS } from 'src/common';
-import { School } from './school.schema';
+import { School } from '../../schools/schemas/school.schema';
 
 export type SchoolStaffDocument = SchoolStaff & Document;
 

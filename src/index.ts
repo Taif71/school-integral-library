@@ -30,3 +30,8 @@ export * from './common/filters';
 export * from './schools/dtos';
 export * from './schools/schemas';
 export * from './schools/interfaces';
+
+// school staff
+export * from './school-staffs/dtos';
+export * from './school-staffs/interfaces';
+export * from './school-staffs/schemas';

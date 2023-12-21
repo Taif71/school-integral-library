@@ -7,6 +7,8 @@ import { UsersModule } from './users/users.module';
 import { DemographicsModule } from './demographics/demographics.module';
 import { RepresentativesModule } from './representatives/representatives.module';
 import { SchoolsModule } from './schools/schools.module';
+import { SchoolStaffsModule } from './school-staffs/school-staffs.module';
+import { ClassesModule } from './classes/classes.module';
 
 @Module({
   imports: [
@@ -16,7 +18,9 @@ import { SchoolsModule } from './schools/schools.module';
     UsersModule,
     DemographicsModule,
     RepresentativesModule,
-    SchoolsModule
+    SchoolsModule,
+    SchoolStaffsModule,
+    ClassesModule
   ],
   controllers: [],
   providers: [],

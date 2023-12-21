@@ -16,8 +16,6 @@ export enum CATEGORY {
     PRIMARY_SCHOOL = 'Primary School',
     JUNIOR_SECONDARY_SCHOOL = 'Junior Secondary School',
     SENIOR_SECONDARY_SCHOOL = 'Senior Secondary School'
-
-
 }
 
 export enum TYPE {
@@ -27,16 +25,12 @@ export enum TYPE {
     ISLAMIYYA = 'Islamiyya',
     INTEGRATED = 'Integrated',
     SCIENCE_TECHNICAL = 'Science/Technical'
-
-
 }
 
 export enum RECOGNITION_STATUS {
     YET_TO_BE_APPROVED = 'Yet to be Approved',
     PROCESSING_APPROVAL = 'Processing Approval',
     APPROVED = 'Approved'
-
-
 }
 
 export enum CURRICULAMS {
@@ -44,5 +38,10 @@ export enum CURRICULAMS {
     BRITISH = 'British',
     AMERICAN = 'American',
     CUSTOM = 'Custom'
+}
+
+export enum STAFF_TYPE {
+    ADMIN = 'ADMIN',
+    HEAD = 'HEAD'
 }
 
