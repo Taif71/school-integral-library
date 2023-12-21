@@ -2,6 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
 import { User } from '../../users/schemas';
 import { MODELS } from '../../common';
+import { State } from '../../demographics/schemas';
 
 export type RepresentativeDocument = Representative & Document;
 
@@ -20,7 +21,7 @@ export class Representative {
         type: SchemaTypes.ObjectId,
         ref: MODELS.STATES,
     })
-    state: User;
+    state: State;
 
     @Prop({ default: false })
     isStateRepresentative: boolean; 

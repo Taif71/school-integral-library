@@ -60,6 +60,7 @@ export enum SCHOOL_MESSAGES {
     FIND_ONE = 'school-get-one',
     DELETE = 'school-delete',
     COUNT = 'school-count',
+    BULK_CREATE = 'bulk-create'
 }
 
 export enum REPRESENTATIVE_MESSAGES {
