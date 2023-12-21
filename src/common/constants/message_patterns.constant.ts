@@ -69,3 +69,27 @@ export enum REPRESENTATIVE_MESSAGES {
     FIND_ONE = 'representative-get-one',
     DELETE = 'representative-delete'
 }
+
+export enum SCHOOL_STAFF_MESSAGES {
+    CREATE = 'school-staff-create',
+    UPDATE = 'school-staff-update',
+    FIND_ALL = 'school-staff-get-all',
+    FIND_ONE = 'school-staff-get-one',
+    COUNT = 'school-staff-count'
+}
+
+export enum LEVEL_MESSAGES {
+    CREATE = 'level-create',
+    UPDATE = 'level-update',
+    FIND_ALL = 'level-get-all',
+    FIND_ONE = 'level-get-one',
+    COUNT = 'level-count'
+}
+
+export enum ARM_MESSAGES {
+    CREATE = 'arm-create',
+    UPDATE = 'arm-update',
+    FIND_ALL = 'arm-get-all',
+    FIND_ONE = 'arm-get-one',
+    COUNT = 'arm-count'
+}
