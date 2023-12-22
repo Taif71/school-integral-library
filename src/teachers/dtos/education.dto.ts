@@ -1,6 +1,6 @@
 import { IsEnum } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
-import { ACADEMIC_CERTIFICATION } from 'src/common';
+import { ACADEMIC_CERTIFICATION } from '../../common';
 
 export class EducationDTO implements Readonly<EducationDTO> {
   @ApiProperty({

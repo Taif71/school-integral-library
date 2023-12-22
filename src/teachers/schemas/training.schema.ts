@@ -1,12 +1,13 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import { MediaDocument, MediaSchema } from '../../common';
 
 export type TrainingDocument = Training & Document;
 
 @Schema()
 export class Training {
   @Prop()
-  certification: string;
+  hasCertificate: boolean;
 
   @Prop()
   category: string;
@@ -16,6 +17,11 @@ export class Training {
 
   @Prop()
   endDate: number;
+
+  @Prop({
+    type: MediaSchema,
+  })
+  file: MediaDocument;
 
   @Prop({ default: false })
   isDeleted: boolean;

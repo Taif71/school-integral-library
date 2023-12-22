@@ -1,6 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { LocationDocument, LocationSchema } from '../../common/schemas';
 
 export type ExperienceDocument = Experience & Document;
 

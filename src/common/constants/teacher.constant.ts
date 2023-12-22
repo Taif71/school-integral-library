@@ -43,7 +43,6 @@ export enum ACADEMIC_CERTIFICATION {
     NECO = 'NECO',
     NABTEB = 'NABTEB',
     GCE = 'GCE',
-
 }
 
 export enum TERTIARY_CERTIFICATION {
