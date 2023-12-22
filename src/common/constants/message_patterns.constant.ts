@@ -94,3 +94,19 @@ export enum ARM_MESSAGES {
     FIND_ONE = 'arm-get-one',
     COUNT = 'arm-count'
 }
+
+export enum TEACHERS_MESSAGES {
+    CREATE = 'teacher-create',
+    UPDATE = 'teacher-update',
+    FIND_ALL = 'teacher-get-all',
+    FIND_ONE = 'teacher-get-one',
+    COUNT = 'teacher-count'
+}
+
+export enum STUDENTS_MESSAGES {
+    CREATE = 'student-create',
+    UPDATE = 'student-update',
+    FIND_ALL = 'student-get-all',
+    FIND_ONE = 'student-get-one',
+    COUNT = 'student-count'
+}

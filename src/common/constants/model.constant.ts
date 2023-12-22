@@ -9,5 +9,7 @@ export enum MODELS {
     SCHOOL_STAFF = 'school_staffs',
     SUBJECT = 'subjects',
     LEVEL = 'level',
-    ARMS = 'arms'
+    ARMS = 'arms',
+    TEACHERS = 'teachers',
+    STUDENTS = 'student'
 }
