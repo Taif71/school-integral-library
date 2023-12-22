@@ -5,7 +5,7 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
-import { ArmForLevel } from '../schema/armForLevel.schema';
+import { ArmForLevel } from '../schemas/armForLevel.schema';
 import { ArmForLevelDTO } from './armForLevel.dto';
 
 

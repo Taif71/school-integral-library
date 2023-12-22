@@ -43,6 +43,12 @@ export * from './classes/arms/schemas';
 
 // level
 export * from './classes/levels/dtos';
-export * from './classes/levels/interface';
-export * from './classes/levels/schema';
+export * from './classes/levels/interfaces';
+export * from './classes/levels/schemas';
+
+
+// teacher
+export * from './teachers/dtos';
+export * from './teachers/interfaces';
+export * from './teachers/schemas';
 

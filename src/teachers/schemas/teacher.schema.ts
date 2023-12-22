@@ -47,7 +47,7 @@ export class Teacher {
     maritalStatus: string;
 
     @Prop()
-    typeofEmployer: string;
+    typeOfEmployer: string;
 
     @Prop({
         type: MobileSchema,

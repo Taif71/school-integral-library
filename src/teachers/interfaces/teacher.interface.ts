@@ -13,7 +13,7 @@ export interface ITeacher {
     readonly religion: string;
     readonly nationality: string;
     readonly maritalStatus: string;
-    readonly typeofEmployer: string;
+    readonly typeOfEmployer: string;
     readonly mobile: IMobile;
     readonly email: string;
     readonly nin: string;

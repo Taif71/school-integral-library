@@ -1,11 +1,3 @@
-export enum MARITAL_STATUS {
-    MARRIED = 'Married',
-    SINGLE = 'Single',
-    SEPARATED = 'Separated',
-    WIDOWED = 'Widowed',
-    DIVORCED = 'Divorced',
-}
-
 export enum EMPLOYER_TYPE {
     FEDERAL = 'Federal',
     NYSC = 'NYSC',
@@ -17,14 +9,14 @@ export enum EMPLOYER_TYPE {
 
 }
 
-export enum APPOINMENT {
+export enum APPOINMENT_TYPE {
     PERMANENT_PENSIONABLE = 'Permanent and Pensionable',
     PERMANENT_NON_PENSIONABLE = 'Permanent and Non-pensionable',
     CONTRACT = 'Contract',
     PART_TIME = 'Part-Time',
 }
 
-export enum BLOOD {
+export enum BLOOD_GROUP {
     A_POSITIVE = 'A+',
     A_NEGATIVE = 'A-',
     B_POSITIVE = 'B+',

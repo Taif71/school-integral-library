@@ -1,4 +1,4 @@
-import { IArm } from "../../../classes/arms/interfaces";
+import { IArm } from "../../arms/interfaces";
 
 export interface IArmForLevel {
     readonly _id: string;

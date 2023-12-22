@@ -191,5 +191,12 @@ export enum TRADE_AND_ENTREPRENEURSHIP {
     WELDING_AND_FABRICATION = 'Welding and Fabrication',
     PHOTOGRAPHY = 'Photography',
     CARPENTRY_AND_JOINERY = 'Carpentry and Joinery',
+}
 
+export enum MARITAL_STATUS {
+    MARRIED = 'Married',
+    SINGLE = 'Single',
+    SEPARATED = 'Separated',
+    WIDOWED = 'Widowed',
+    DIVORCED = 'Divorced',
 }
