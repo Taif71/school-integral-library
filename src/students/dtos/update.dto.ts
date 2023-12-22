@@ -125,4 +125,7 @@ export class UpdateStudentDTO implements Readonly<UpdateStudentDTO> {
 
     @ApiProperty({ default: false })
     isDeleted: boolean;
+
+    @ApiProperty()
+    timezone: string;
 }

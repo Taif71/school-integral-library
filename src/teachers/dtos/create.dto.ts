@@ -132,5 +132,5 @@ export class CreateTeacherDTO implements Readonly<CreateTeacherDTO> {
     address: ILocation;
 
     @ApiProperty()
-    timezone: number;
+    timezone: string;
 }
