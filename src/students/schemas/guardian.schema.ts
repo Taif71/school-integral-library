@@ -9,10 +9,7 @@ export type GuardianDocument = Guardian & Document;
     toObject: { virtuals: true, getters: true },
 })
 export class Guardian {
-    @Prop({
-        minlength: 3,
-        maxlength: 30,
-    })
+    @Prop()
     fullName: string;
 
     @Prop()
@@ -40,6 +37,9 @@ export class Guardian {
 
     @Prop()
     address: string;
+
+    @Prop()
+    isDeleted: boolean;
 }
 
 export const GuardianSchema = SchemaFactory.createForClass(Guardian);
