@@ -52,3 +52,8 @@ export * from './teachers/dtos';
 export * from './teachers/interfaces';
 export * from './teachers/schemas';
 
+// student
+export * from './students/dtos';
+export * from './students/interfaces';
+export * from './students/schemas';
+
