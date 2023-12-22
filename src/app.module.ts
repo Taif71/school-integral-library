@@ -10,6 +10,7 @@ import { SchoolsModule } from './schools/schools.module';
 import { SchoolStaffsModule } from './school-staffs/school-staffs.module';
 import { ClassesModule } from './classes/classes.module';
 import { TeachersModule } from './teachers/teachers.module';
+import { StudentsModule } from './students/students.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { TeachersModule } from './teachers/teachers.module';
     SchoolsModule,
     SchoolStaffsModule,
     ClassesModule,
-    TeachersModule
+    TeachersModule,
+    StudentsModule
   ],
   controllers: [],
   providers: [],
