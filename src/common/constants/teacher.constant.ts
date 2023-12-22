@@ -22,7 +22,6 @@ export enum APPOINMENT {
     PERMANENT_NON_PENSIONABLE = 'Permanent and Non-pensionable',
     CONTRACT = 'Contract',
     PART_TIME = 'Part-Time',
-
 }
 
 export enum BLOOD {
