@@ -1,3 +1,4 @@
+import { IRepresentative } from '../../representatives/interfaces';
 import { ICity } from './city.interface';
 import { ICountry } from './country.interface';
 
@@ -7,6 +8,7 @@ export interface IState {
   readonly iso2code: string;
   readonly lat: number;
   readonly lng: number;
+  readonly representatives:IRepresentative[];
   readonly cities: ICity[];
   readonly country: ICountry;
   readonly isCapital: boolean;
