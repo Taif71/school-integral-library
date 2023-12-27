@@ -17,7 +17,7 @@ export class SchoolOwnership {
   })
   mobile: MobileDocument;
 
-  @Prop({ required: true, unique: true })
+  @Prop({ required: true })
   email: string;
 
   @Prop({ required: true })

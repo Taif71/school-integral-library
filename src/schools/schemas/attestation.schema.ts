@@ -20,7 +20,7 @@ export class Attestation {
     @Prop()
     designation: string;
 
-    @Prop({ required: true, unique: true })
+    @Prop({ required: true })
     email: string;
 
     @Prop()
