@@ -19,12 +19,7 @@ export * from './representatives/dto';
 export * from './representatives/interfaces';
 
 // common
-export * from './common/constants';
-export * from './common/dto';
-export * from './common/interfaces';
-export * from './common/schemas';
-export * from './common/utils';
-export * from './common/filters';
+export * from './common'
 
 // school
 export * from './schools/dtos';
