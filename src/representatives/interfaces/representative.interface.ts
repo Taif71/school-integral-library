@@ -1,6 +1,8 @@
+import { IUser } from "../../users/interfaces";
+
 export interface IRepresentative {
   readonly _id: string;
-  readonly user: string;
+  readonly user: IUser;
   readonly state: string;
   readonly isStateRepresentative: boolean;
   readonly isOrganizationRepresentative: boolean;
