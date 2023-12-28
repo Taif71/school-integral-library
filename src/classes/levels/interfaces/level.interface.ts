@@ -9,4 +9,8 @@ export interface ILevel {
   readonly gradingFormat: string;
   readonly arms: IArmForLevel;
   readonly isDeleted: boolean;
+  readonly cTime: number;
+  readonly cBy: string;
+  readonly uTime: number;
+  readonly uBy: string;
 }
