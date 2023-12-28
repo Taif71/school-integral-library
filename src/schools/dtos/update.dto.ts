@@ -1,4 +1,5 @@
 import {
+    IsString,
     ValidateNested,
     IsEnum
 } from 'class-validator';
@@ -9,13 +10,15 @@ import {
     CATEGORY,
     TYPE,
     ILocation,
-    LocationDTO
+    LocationDTO,
+    CurriculamDTO,
+    ICurriculam
 } from '../../common';
-import {
-    IAttestation,
-    ICompliance,
-    IMembership,
-    ISchoolOwnership
+import { 
+    IAttestation, 
+    ICompliance, 
+    IMembership, 
+    ISchoolOwnership 
 } from '../interfaces';
 import { OwnershipDTO } from './ownership.dto';
 import { ComplianceDTO } from './compliance.dto';
@@ -94,6 +97,13 @@ export class UpdateSchoolDTO implements Readonly<UpdateSchoolDTO> {
     @ValidateNested({ each: true })
     @Type(() => MembershipDTO)
     associationMembership: IMembership;
+
+    @ApiProperty({
+        type: CurriculamDTO,
+    })
+    @ValidateNested({ each: true })
+    @Type(() => CurriculamDTO)
+    curriculam: ICurriculam;
 
     @ApiProperty({
         type: AttestationDTO,

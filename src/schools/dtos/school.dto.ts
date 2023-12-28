@@ -10,7 +10,9 @@ import {
     CATEGORY,
     TYPE,
     ILocation,
-    LocationDTO
+    LocationDTO,
+    CurriculamDTO,
+    ICurriculam
 } from '../../common';
 import { 
     IAttestation, 
@@ -99,6 +101,13 @@ export class SchoolDTO implements Readonly<SchoolDTO> {
     @ValidateNested({ each: true })
     @Type(() => MembershipDTO)
     associationMembership: IMembership;
+
+    @ApiProperty({
+        type: CurriculamDTO,
+    })
+    @ValidateNested({ each: true })
+    @Type(() => CurriculamDTO)
+    curriculam: ICurriculam;
 
     @ApiProperty({
         type: AttestationDTO,

@@ -1,6 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { LocationDocument, LocationSchema } from '../../common/schemas';
+import { 
+  CurriculamDocument, 
+  CurriculamSchema, 
+  LocationDocument, 
+  LocationSchema 
+} from '../../common/schemas';
 import { 
   SchoolOwnershipDocument, 
   SchoolOwnershipSchema 
@@ -79,6 +84,11 @@ export class School {
     type: MembershipSchema,
   })
   associationMembership: MembershipDocument;
+
+  @Prop({
+    type: CurriculamSchema,
+  })
+  curriculam: CurriculamDocument;
 
   @Prop({
     type: AttestationSchema,

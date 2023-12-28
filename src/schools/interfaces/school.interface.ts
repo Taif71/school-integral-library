@@ -1,4 +1,4 @@
-import { ILocation } from "../../common";
+import { ICurriculam, ILocation } from "../../common";
 import { IAttestation } from "./attestation.interface";
 import { ICompliance } from "./compliance.interface";
 import { IMembership } from "./membership.interface";
@@ -19,6 +19,7 @@ export interface ISchool {
     readonly license: ICompliance;
     readonly curriculamLicense: ICompliance;
     readonly associationMembership: IMembership;
+    readonly curriculam: ICurriculam;
     readonly attestation: IAttestation;
     readonly isDeleted: boolean;
     readonly cTime: number;
