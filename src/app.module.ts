@@ -11,6 +11,7 @@ import { SchoolStaffsModule } from './school-staffs/school-staffs.module';
 import { ClassesModule } from './classes/classes.module';
 import { TeachersModule } from './teachers/teachers.module';
 import { StudentsModule } from './students/students.module';
+import { InfirmariesModule } from './infirmaries/infirmaries.module';
 
 @Module({
   imports: [
@@ -24,7 +25,8 @@ import { StudentsModule } from './students/students.module';
     SchoolStaffsModule,
     ClassesModule,
     TeachersModule,
-    StudentsModule
+    StudentsModule,
+    InfirmariesModule
   ],
   controllers: [],
   providers: [],
