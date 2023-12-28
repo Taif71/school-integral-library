@@ -144,7 +144,6 @@ export function generateId(prefix: string, id: number) {
 export function createSearchQuery(query) {
   try {
     let searchQuery: any = {
-      isActive: true,
       isDeleted: false,
     };
 
