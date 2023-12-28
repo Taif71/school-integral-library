@@ -8,7 +8,8 @@ export enum MODELS {
     SCHOOL = 'schools',
     SCHOOL_STAFF = 'school_staffs',
     SUBJECT = 'subjects',
-    LEVEL = 'level',
+    LEVELS = 'level',
+    CLASSES = 'classes',
     ARMS = 'arms',
     TEACHERS = 'teachers',
     STUDENTS = 'student'

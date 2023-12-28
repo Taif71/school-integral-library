@@ -41,6 +41,10 @@ export * from './classes/levels/dtos';
 export * from './classes/levels/interfaces';
 export * from './classes/levels/schemas';
 
+// class
+export * from './classes/classes/dtos';
+export * from './classes/classes/interfaces';
+export * from './classes/classes/schemas';
 
 // teacher
 export * from './teachers/dtos';

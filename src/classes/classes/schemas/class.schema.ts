@@ -15,7 +15,7 @@ export type ClassDocument = Class & Document;
 export class Class {
   @Prop({
     type: SchemaTypes.ObjectId,
-    ref: MODELS.LEVEL,
+    ref: MODELS.LEVELS,
     required: true,
     immutable: true,
   })
