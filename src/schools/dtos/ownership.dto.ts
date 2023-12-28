@@ -1,11 +1,12 @@
 import {
     IsEmail,
+    IsEnum,
     IsString,
     ValidateNested
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
-import { IMedia, MediaDTO, IMobile, MobileDTO } from 'src/common';
+import { IMobile, MobileDTO, RECOGNITION_STATUS } from '../../common';
 
 export class OwnershipDTO implements Readonly<OwnershipDTO> {
     @ApiProperty()
@@ -29,8 +30,11 @@ export class OwnershipDTO implements Readonly<OwnershipDTO> {
     @ApiProperty()
     yearOfEstablishment: number;
 
-    @ApiProperty()
-    recognitionStatus: number;
+    @ApiProperty({
+        enum: RECOGNITION_STATUS
+    })
+    @IsEnum(RECOGNITION_STATUS)
+    recognitionStatus: string;
 
     @ApiProperty()
     isDeleted: boolean;

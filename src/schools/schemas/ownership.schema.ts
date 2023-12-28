@@ -20,14 +20,14 @@ export class SchoolOwnership {
   @Prop({ required: true })
   email: string;
 
-  @Prop({ required: true })
+  @Prop()
   cac_rcNumber: string;
 
-  @Prop({ required: true })
+  @Prop()
   yearOfEstablishment: number;
 
   @Prop()
-  recognitionStatus: number;
+  recognitionStatus: string;
 
   @Prop({ default: false })
   isDeleted: boolean;

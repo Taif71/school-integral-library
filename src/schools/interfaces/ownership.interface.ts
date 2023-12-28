@@ -7,6 +7,6 @@ export interface ISchoolOwnership {
     readonly email: string;
     readonly cac_rcNumber: string;    
     readonly yearOfEstablishment: number;
-    readonly recognitionStatus: number;
+    readonly recognitionStatus: string;
     readonly isDeleted: boolean;
   }
