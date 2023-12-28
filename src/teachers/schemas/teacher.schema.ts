@@ -162,7 +162,7 @@ export class Teacher {
     @Prop({
         type: CurriculamSchema,
     })
-    curriculam: CurriculamDocument;
+    teachingSubjects: CurriculamDocument;
 
     @Prop({ default: false })
     isDeleted: boolean;
