@@ -14,6 +14,12 @@ export type ClassDocument = Class & Document;
 })
 export class Class {
   @Prop({
+    required: true,
+    unique: true
+  })
+  code: string;
+
+  @Prop({
     type: SchemaTypes.ObjectId,
     ref: MODELS.LEVELS,
     required: true,

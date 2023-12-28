@@ -5,6 +5,7 @@ import { IStudent } from "../../../students/interfaces";
 
 export interface IClass {
   readonly _id: string;
+  readonly code: string;
   readonly level: ILevel;
   readonly arm: IArm;
   readonly room: number;

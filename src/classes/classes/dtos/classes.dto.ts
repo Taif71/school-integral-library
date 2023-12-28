@@ -7,6 +7,9 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class ClassDTO implements Readonly<ClassDTO> {
     @ApiProperty()
+    code: string;
+
+    @ApiProperty()
     @IsMongoId()
     level: string;
 
