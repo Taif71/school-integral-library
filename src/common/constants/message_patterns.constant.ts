@@ -95,6 +95,13 @@ export enum ARM_MESSAGES {
     COUNT = 'arm-count'
 }
 
+export enum CLASS_MESSAGES {
+    UPDATE = 'class-update',
+    FIND_ALL = 'class-get-all',
+    FIND_ONE = 'class-get-one',
+    COUNT = 'class-count'
+}
+
 export enum TEACHERS_MESSAGES {
     CREATE = 'teacher-create',
     UPDATE = 'teacher-update',

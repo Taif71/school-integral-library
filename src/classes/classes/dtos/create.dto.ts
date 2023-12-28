@@ -14,6 +14,9 @@ export class CreateClassDTO implements Readonly<CreateClassDTO> {
     arm: string;
 
     @ApiProperty()
+    room: number;
+
+    @ApiProperty()
     @IsString()
     timezone: string;
 }

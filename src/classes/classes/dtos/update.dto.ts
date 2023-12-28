@@ -7,6 +7,9 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class UpdateClassDTO implements Readonly<UpdateClassDTO> {
     @ApiProperty()
+    room: number;
+
+    @ApiProperty()
     @IsMongoId()
     classTeacher: string;
 

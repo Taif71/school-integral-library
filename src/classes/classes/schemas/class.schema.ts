@@ -29,6 +29,9 @@ export class Class {
   })
   arm: Arm;
 
+  @Prop()
+  room: number;
+
   @Prop({
     type: SchemaTypes.ObjectId,
     ref: MODELS.TEACHERS,

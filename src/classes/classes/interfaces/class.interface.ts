@@ -7,6 +7,7 @@ export interface IClass {
   readonly _id: string;
   readonly level: ILevel;
   readonly arm: IArm;
+  readonly room: number;
   readonly classTeacher: ITeacher;
   readonly students: IStudent[];
   readonly isActive: boolean;

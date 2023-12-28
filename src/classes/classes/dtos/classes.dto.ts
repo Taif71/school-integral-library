@@ -15,6 +15,9 @@ export class ClassDTO implements Readonly<ClassDTO> {
     arm: string;
 
     @ApiProperty()
+    room: number;
+
+    @ApiProperty()
     @IsMongoId()
     classTeacher: string;
 
