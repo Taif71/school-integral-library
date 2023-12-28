@@ -1,6 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { MediaDocument, MediaSchema } from '../../common';
+import { 
+  CurriculamDocument, 
+  CurriculamSchema, 
+  MediaDocument, 
+  MediaSchema 
+} from '../../common';
 
 export type TrainingDocument = Training & Document;
 
@@ -22,6 +27,11 @@ export class Training {
     type: MediaSchema,
   })
   file: MediaDocument;
+
+  @Prop({
+    type: CurriculamSchema,
+  })
+  curriculam: CurriculamDocument;
 
   @Prop({ default: false })
   isDeleted: boolean;

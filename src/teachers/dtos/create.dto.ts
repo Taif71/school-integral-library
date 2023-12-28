@@ -11,8 +11,8 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
-import { 
-    Gender, 
+import {
+    Gender,
     MARITAL_STATUS,
     EMPLOYER_TYPE,
     MobileDTO,
@@ -22,7 +22,9 @@ import {
     MediaDTO,
     LocationDTO,
     ILocation,
-    BLOOD_GROUP
+    BLOOD_GROUP,
+    ICurriculam,
+    CurriculamDTO
 } from '../../common';
 import { IEducation, IExperience, ITraining } from '../interfaces';
 import { EducationDTO } from './education.dto';
@@ -92,7 +94,7 @@ export class CreateTeacherDTO implements Readonly<CreateTeacherDTO> {
 
     @ApiProperty()
     nin: string;
-    
+
     @ApiProperty()
     trcnNumber: string;
 
@@ -130,6 +132,92 @@ export class CreateTeacherDTO implements Readonly<CreateTeacherDTO> {
     @ValidateNested({ each: true })
     @Type(() => LocationDTO)
     address: ILocation;
+
+    @ApiProperty()
+    genotype: string;
+
+    @ApiProperty({
+        enum: BLOOD_GROUP,
+    })
+    @IsEnum(BLOOD_GROUP)
+    bloodGroup: BLOOD_GROUP;
+
+    @ApiProperty()
+    weight: string;
+
+    @ApiProperty()
+    height: string;
+
+    @ApiProperty()
+    medicalCondition: string;
+
+    @ApiProperty({
+        type: [EducationDTO],
+    })
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => EducationDTO)
+    academicQualifications: [IEducation];
+
+    @ApiProperty({
+        type: [EducationDTO],
+    })
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => EducationDTO)
+    tertiaryEducations: [IEducation];
+
+    @ApiProperty({
+        type: [EducationDTO],
+    })
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => EducationDTO)
+    teachingQualifications: [IEducation];
+
+    @ApiProperty({
+        type: [ExperienceDTO],
+    })
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => ExperienceDTO)
+    experiences: [IExperience];
+
+    @ApiProperty()
+    @IsArray()
+    specializedSkills: [string];
+
+    @ApiProperty()
+    @IsArray()
+    computerSkills: [string];
+
+    @ApiProperty()
+    @IsArray()
+    languageProficiency: [string];
+
+    @ApiProperty({
+        type: [TrainingDTO],
+    })
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => TrainingDTO)
+    training: [ITraining];
+
+    @ApiProperty({
+        type: MediaDTO,
+    })
+    @Type(() => MediaDTO)
+    signature: IMedia;
+
+    @ApiProperty()
+    date: number;
+
+    @ApiProperty({
+        type: CurriculamDTO,
+    })
+    @ValidateNested({ each: true })
+    @Type(() => CurriculamDTO)
+    curriculam: ICurriculam;
 
     @ApiProperty()
     timezone: string;

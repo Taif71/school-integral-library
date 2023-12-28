@@ -1,4 +1,4 @@
-import { ILocation, IMedia, IMobile } from "src/common";
+import { ICurriculam, ILocation, IMedia, IMobile } from "src/common";
 import { IEducation } from "./education.interface";
 import { IExperience } from "./experience.schema";
 import { ITraining } from "./training.interface";
@@ -41,6 +41,7 @@ export interface ITeacher {
     readonly training: ITraining[];
     readonly signature: IMedia;
     readonly date: number;
+    readonly curriculam: ICurriculam;
     readonly isDeleted: boolean;
     readonly cTime: number;
     readonly cBy: string;
