@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { LocationDocument, LocationSchema, MediaDocument, MediaSchema, MobileDocument, MobileSchema } from '../../common';
+import { CurriculamDocument, CurriculamSchema, LocationDocument, LocationSchema, MediaDocument, MediaSchema, MobileDocument, MobileSchema } from '../../common';
 import { Education, EducationSchema } from './education.schema';
 import { Experience, ExperienceSchema } from './experience.schema';
 import { Training, TrainingSchema } from './training.schema';
@@ -158,6 +158,11 @@ export class Teacher {
 
     @Prop()
     date: number;
+
+    @Prop({
+        type: CurriculamSchema,
+    })
+    curriculam: CurriculamDocument;
 
     @Prop({ default: false })
     isDeleted: boolean;

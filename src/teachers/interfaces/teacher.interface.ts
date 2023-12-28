@@ -41,7 +41,7 @@ export interface ITeacher {
     readonly training: ITraining[];
     readonly signature: IMedia;
     readonly date: number;
-    readonly curriculam: ICurriculam;
+    readonly teachingSubjects: ICurriculam;
     readonly isDeleted: boolean;
     readonly cTime: number;
     readonly cBy: string;

@@ -217,7 +217,7 @@ export class TeacherDTO implements Readonly<TeacherDTO> {
     })
     @ValidateNested({ each: true })
     @Type(() => CurriculamDTO)
-    curriculam: ICurriculam;
+    teachingSubjects: ICurriculam;
 
     @ApiProperty({ default: false })
     isDeleted: boolean;

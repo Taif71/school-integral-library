@@ -94,7 +94,6 @@ export class Student {
     })
     emergencyContact: GuardianDocument;
 
-
     @Prop({ default: false })
     isDeleted: boolean;
 

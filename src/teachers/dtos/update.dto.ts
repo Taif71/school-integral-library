@@ -22,7 +22,9 @@ import {
     MediaDTO,
     LocationDTO,
     ILocation,
-    BLOOD_GROUP
+    BLOOD_GROUP,
+    CurriculamDTO,
+    ICurriculam
 } from '../../common';
 import { IEducation, IExperience, ITraining } from '../interfaces';
 import { EducationDTO } from './education.dto';
@@ -209,6 +211,13 @@ export class UpdateTeacherDTO implements Readonly<UpdateTeacherDTO> {
 
     @ApiProperty()
     date: number;
+
+    @ApiProperty({
+        type: CurriculamDTO,
+    })
+    @ValidateNested({ each: true })
+    @Type(() => CurriculamDTO)
+    teachingSubjects: ICurriculam;
 
     @ApiProperty({ default: false })
     isDeleted: boolean;

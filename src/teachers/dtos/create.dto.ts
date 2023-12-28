@@ -217,7 +217,7 @@ export class CreateTeacherDTO implements Readonly<CreateTeacherDTO> {
     })
     @ValidateNested({ each: true })
     @Type(() => CurriculamDTO)
-    curriculam: ICurriculam;
+    teachingSubjects: ICurriculam;
 
     @ApiProperty()
     timezone: string;

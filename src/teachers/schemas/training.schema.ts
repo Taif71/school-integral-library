@@ -28,11 +28,6 @@ export class Training {
   })
   file: MediaDocument;
 
-  @Prop({
-    type: CurriculamSchema,
-  })
-  curriculam: CurriculamDocument;
-
   @Prop({ default: false })
   isDeleted: boolean;
 }
