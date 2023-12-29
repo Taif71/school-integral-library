@@ -1,6 +1,9 @@
+import { ISchool } from "../../../schools/interfaces";
+
 export interface IArm {
   readonly _id: string;
   readonly name: string;
+  readonly school: ISchool;
   readonly isDeleted: boolean;
   readonly cTime: number;
   readonly cBy: string;

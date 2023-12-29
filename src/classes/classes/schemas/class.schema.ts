@@ -5,6 +5,8 @@ import { Level } from '../../levels/schemas';
 import { Arm } from '../../arms/schemas';
 import { Teacher } from '../../../teachers/schemas';
 import { Student } from '../../../students/schemas';
+import { School } from '../../../schools/schemas';
+
 
 export type ClassDocument = Class & Document;
 
@@ -18,6 +20,13 @@ export class Class {
     unique: true
   })
   code: string;
+  
+  @Prop({
+    type: SchemaTypes.ObjectId,
+    ref: MODELS.SCHOOL,
+    required: true,
+  })
+  school: School;
 
   @Prop({
     type: SchemaTypes.ObjectId,

@@ -1,5 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
+import { School } from '../../../schools/schemas';
+import { MODELS } from '../../../common';
 
 export type ArmDocument = Arm & Document;
 
@@ -10,6 +12,13 @@ export type ArmDocument = Arm & Document;
 export class Arm {
     @Prop()
     name: string;
+
+    @Prop({
+        type: SchemaTypes.ObjectId,
+        ref: MODELS.SCHOOL,
+        required: true,
+    })
+    school: School;
 
     @Prop({ default: false })
     isDeleted: boolean;

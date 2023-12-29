@@ -1,6 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { Document, SchemaTypes } from 'mongoose';
 import { ArmForLevel, ArmForLevelSchema } from './armForLevel.schema';
+import { School } from '../../../schools/schemas';
+import { MODELS } from 'src/common';
 
 export type LevelDocument = Level & Document;
 
@@ -9,6 +11,13 @@ export type LevelDocument = Level & Document;
   toObject: { virtuals: true, getters: true },
 })
 export class Level {
+  @Prop({
+    type: SchemaTypes.ObjectId,
+    ref: MODELS.SCHOOL,
+    required: true,
+  })
+  school: School;
+
   @Prop({ required: true })
   name: string;
 

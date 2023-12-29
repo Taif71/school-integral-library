@@ -1,7 +1,8 @@
 import {
     IsString,
     IsArray,
-    ValidateNested
+    ValidateNested,
+    IsMongoId
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
@@ -10,6 +11,10 @@ import { ArmForLevelDTO } from './armForLevel.dto';
 
 
 export class CreateLevelDTO implements Readonly<CreateLevelDTO> {
+    @ApiProperty()
+    @IsMongoId()
+    school: string;
+
     @ApiProperty()
     @IsString()
     name: string;

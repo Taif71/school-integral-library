@@ -1,5 +1,6 @@
 import {
     IsString,
+    IsMongoId
 } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
@@ -8,6 +9,10 @@ export class ArmDTO implements Readonly<ArmDTO> {
     @ApiProperty()
     @IsString()
     name: string;
+
+    @ApiProperty()
+    @IsMongoId()
+    school: string;
 
     @ApiProperty()
     @IsString()

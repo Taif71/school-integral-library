@@ -11,6 +11,10 @@ export class ClassDTO implements Readonly<ClassDTO> {
 
     @ApiProperty()
     @IsMongoId()
+    school: string;
+
+    @ApiProperty()
+    @IsMongoId()
     level: string;
 
     @ApiProperty()
