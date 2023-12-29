@@ -24,19 +24,16 @@ export class Attendance {
   @Prop({
     type: [SchemaTypes.ObjectId],
     ref: MODELS.STUDENTS,
-    default: undefined,
+    default: undefined
   })
   presentStudents: Student[];
 
   @Prop({
     type: [SchemaTypes.ObjectId],
     ref: MODELS.STUDENTS,
-    default: undefined,
+    default: undefined
   })
   absentStudents: Student[];
-
-  @Prop({ default: true })
-  isActive: boolean;
 
   @Prop({ default: false })
   isDeleted: boolean;

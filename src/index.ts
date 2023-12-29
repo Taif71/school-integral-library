@@ -56,3 +56,8 @@ export * from './students/dtos';
 export * from './students/interfaces';
 export * from './students/schemas';
 
+// attendance
+export * from './attendances/dtos';
+export * from './attendances/interfaces';
+export * from './attendances/schemas';
+

@@ -12,5 +12,6 @@ export enum MODELS {
     CLASSES = 'classes',
     ARMS = 'arms',
     TEACHERS = 'teachers',
-    STUDENTS = 'student'
+    STUDENTS = 'student',
+    ATTENDANCES = 'attendances'
 }

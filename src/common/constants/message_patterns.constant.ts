@@ -117,3 +117,11 @@ export enum STUDENTS_MESSAGES {
     FIND_ONE = 'student-get-one',
     COUNT = 'student-count'
 }
+
+export enum ATTENDANCES_MESSAGES {
+    CREATE = 'attendances-create',
+    UPDATE = 'attendances-update',
+    FIND_ALL = 'attendances-get-all',
+    FIND_ONE = 'attendances-get-one',
+    COUNT = 'attendances-count'
+}
