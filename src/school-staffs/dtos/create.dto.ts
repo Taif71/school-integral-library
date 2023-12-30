@@ -20,6 +20,10 @@ export class CreateSchoolStaffDTO implements Readonly<CreateSchoolStaffDTO> {
     @IsMongoId()
     school: string;
 
+    @ApiProperty()
+    @IsMongoId()
+    user: string;
+
     @ApiProperty({
         enum: STAFF_TYPE,
     })

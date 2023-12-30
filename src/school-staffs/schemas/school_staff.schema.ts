@@ -3,6 +3,7 @@ import { Document, SchemaTypes } from 'mongoose';
 import { MobileDocument, MobileSchema } from '../../common/schemas';
 import { MODELS } from 'src/common';
 import { School } from '../../schools/schemas/school.schema';
+import { User } from '../../users/schemas';
 
 export type SchoolStaffDocument = SchoolStaff & Document;
 
@@ -18,6 +19,13 @@ export class SchoolStaff {
         immutable: true,
     })
     school: School;
+
+    @Prop({
+        type: SchemaTypes.ObjectId,
+        ref: MODELS.USERS,
+        required: true,
+    })
+    user: User;
 
     @Prop() // type should be the following enum: head, admin
     type: string;

@@ -155,7 +155,7 @@ export function createSearchQuery(query) {
     if (query.hasOwnProperty('filter') && query.filter) {
       searchQuery = {
         ...searchQuery,
-        ...JSON.parse(query.filter),
+        ...query.filter,
       };
     }
 
