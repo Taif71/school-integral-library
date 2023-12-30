@@ -8,8 +8,7 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateAttendanceDTO implements Readonly<CreateAttendanceDTO> {
     @ApiProperty()
-    @IsMongoId()
-    class: string;
+    classCode: string;
 
     @ApiProperty()
     date: number;

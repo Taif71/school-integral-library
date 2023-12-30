@@ -58,7 +58,7 @@ export class Class {
     ref: MODELS.STUDENTS,
     default: undefined,
   })
-  students: Student[];
+  students: [Student];
 
   @Prop({ default: true })
   isActive: boolean;
