@@ -4,5 +4,6 @@ export enum QUEUES {
     DEMOGRAPHICS = 'demographics_queue',
     REPRESENTATIVES = 'representatives_queue',
     SCHOOLS = 'schools_queue',
-    FILES = 'files_queue'
+    FILES = 'files_queue',
+    ATTENDANCE = 'attendance_queue'
 }
