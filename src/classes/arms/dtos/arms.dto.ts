@@ -19,7 +19,10 @@ export class ArmDTO implements Readonly<ArmDTO> {
     timezone: string;
 
     @ApiProperty()
-    isDeleted: boolean;
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     cTime: number;

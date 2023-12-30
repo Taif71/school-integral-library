@@ -38,6 +38,12 @@ export class UpdateLevelDTO implements Readonly<UpdateLevelDTO> {
     arms: [ArmForLevel];
 
     @ApiProperty()
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
+
+    @ApiProperty()
     @IsString()
     timezone: string;
 }

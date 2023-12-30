@@ -43,7 +43,10 @@ export class LevelDTO implements Readonly<LevelDTO> {
     arms: [ArmForLevel];
 
     @ApiProperty()
-    isDeleted: boolean;
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     cTime: number;

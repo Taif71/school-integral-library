@@ -7,6 +7,12 @@ export class UpdateArmDTO implements Readonly<UpdateArmDTO> {
     @ApiProperty()
     @IsString()
     name: string;
+    
+    @ApiProperty()
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     @IsString()
