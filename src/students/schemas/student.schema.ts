@@ -11,6 +11,12 @@ export type StudentDocument = Student & Document;
 })
 export class Student {
     @Prop({
+        required: true,
+        unique: true,
+    })
+    csi: string;
+
+    @Prop({
         minlength: 3,
         maxlength: 30,
     })
@@ -41,7 +47,7 @@ export class Student {
     @Prop()
     nationality: string;
 
-    @Prop({ required: true, unique: true })
+    @Prop()
     email: string;
 
     @Prop({

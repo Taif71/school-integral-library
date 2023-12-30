@@ -24,6 +24,10 @@ import { GuardianDTO } from './guardian.dto';
 
 export class StudentDTO implements Readonly<StudentDTO> {
     @ApiProperty()
+    @IsString()
+    csi: string;
+
+    @ApiProperty()
     @MaxLength(30)
     @MinLength(3)
     @Matches(/^[a-zA-Z ]+$/)

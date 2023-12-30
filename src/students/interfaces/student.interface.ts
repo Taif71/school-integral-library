@@ -3,6 +3,7 @@ import { IGuardian } from "./guardian.interface";
 
 export interface IStudent {
     readonly _id: string;
+    readonly csi: string;
     readonly firstName: string;
     readonly middleName: string;
     readonly lastName: string;

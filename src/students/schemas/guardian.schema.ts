@@ -26,7 +26,7 @@ export class Guardian {
     })
     mobile: MobileDocument;
 
-    @Prop({ required: true, unique: true })
+    @Prop({ required: true })
     email: string;
 
     @Prop()
