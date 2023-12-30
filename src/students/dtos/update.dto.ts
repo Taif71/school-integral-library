@@ -123,8 +123,11 @@ export class UpdateStudentDTO implements Readonly<UpdateStudentDTO> {
     @Type(() => GuardianDTO)
     emergencyContact: IGuardian;
 
-    @ApiProperty({ default: false })
-    isDeleted: boolean;
+    @ApiProperty()
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     timezone: string;

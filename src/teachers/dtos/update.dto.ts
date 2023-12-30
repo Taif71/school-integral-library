@@ -219,8 +219,11 @@ export class UpdateTeacherDTO implements Readonly<UpdateTeacherDTO> {
     @Type(() => CurriculamDTO)
     teachingSubjects: ICurriculam;
 
-    @ApiProperty({ default: false })
-    isDeleted: boolean;
+    @ApiProperty()
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     timezone: string;

@@ -117,7 +117,10 @@ export class SchoolDTO implements Readonly<SchoolDTO> {
     attestation: IAttestation;
 
     @ApiProperty()
-    isDeleted: boolean;
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     cTime: number;

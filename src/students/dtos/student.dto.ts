@@ -127,8 +127,11 @@ export class StudentDTO implements Readonly<StudentDTO> {
     @Type(() => GuardianDTO)
     emergencyContact: IGuardian;
 
-    @ApiProperty({ default: false })
-    isDeleted: boolean;
+    @ApiProperty()
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     cTime: number;

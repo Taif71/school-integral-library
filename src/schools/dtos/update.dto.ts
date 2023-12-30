@@ -113,7 +113,10 @@ export class UpdateSchoolDTO implements Readonly<UpdateSchoolDTO> {
     attestation: IAttestation;
 
     @ApiProperty()
-    isDeleted: boolean;
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     timezone: string;
