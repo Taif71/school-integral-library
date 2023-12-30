@@ -54,6 +54,12 @@ export class UpdateSchoolStaffDTO implements Readonly<UpdateSchoolStaffDTO> {
     nin: string;
 
     @ApiProperty()
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
+
+    @ApiProperty()
     @IsString()
     timezone: string;
 }

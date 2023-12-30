@@ -58,7 +58,10 @@ export class SchoolStaffDTO implements Readonly<SchoolStaffDTO> {
     nin: string;
 
     @ApiProperty()
-    isDeleted: boolean;
+    isActive: boolean;
+
+    @ApiProperty()
+    isDelete: boolean;
 
     @ApiProperty()
     cTime: number;
