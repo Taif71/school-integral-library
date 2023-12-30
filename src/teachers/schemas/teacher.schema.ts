@@ -164,6 +164,9 @@ export class Teacher {
     })
     teachingSubjects: CurriculamDocument;
 
+    @Prop({ default: true })
+    isActive: boolean;
+
     @Prop({ default: false })
     isDeleted: boolean;
 

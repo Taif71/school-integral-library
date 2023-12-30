@@ -42,6 +42,7 @@ export interface ITeacher {
     readonly signature: IMedia;
     readonly date: number;
     readonly teachingSubjects: ICurriculam;
+    readonly isActive: boolean;
     readonly isDeleted: boolean;
     readonly cTime: number;
     readonly cBy: string;

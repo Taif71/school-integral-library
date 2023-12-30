@@ -95,6 +95,9 @@ export class School {
   })
   attestation: AttestationDocument;  
 
+  @Prop({ default: true })
+  isActive: boolean;
+
   @Prop({ default: false })
   isDeleted: boolean;
 

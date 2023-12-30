@@ -20,6 +20,9 @@ export class Arm {
     })
     school: School;
 
+    @Prop({ default: true })
+    isActive: boolean;
+
     @Prop({ default: false })
     isDeleted: boolean;
 

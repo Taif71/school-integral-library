@@ -25,6 +25,7 @@ export interface IStudent {
     readonly availableCards: string[];
     readonly guardians: IGuardian[];
     readonly emergencyContact: IGuardian;
+    readonly isActive: boolean;
     readonly isDeleted: boolean;
     readonly cTime: number;
     readonly cBy: string;

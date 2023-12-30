@@ -21,6 +21,7 @@ export interface ISchool {
     readonly associationMembership: IMembership;
     readonly curriculam: ICurriculam;
     readonly attestation: IAttestation;
+    readonly isActive: boolean;
     readonly isDeleted: boolean;
     readonly cTime: number;
     readonly cBy: string;

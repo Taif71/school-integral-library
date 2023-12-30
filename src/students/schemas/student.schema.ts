@@ -100,6 +100,9 @@ export class Student {
     })
     emergencyContact: GuardianDocument;
 
+    @Prop({ default: true })
+    isActive: boolean;
+
     @Prop({ default: false })
     isDeleted: boolean;
 

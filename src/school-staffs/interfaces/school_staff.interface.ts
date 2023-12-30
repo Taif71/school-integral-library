@@ -12,5 +12,6 @@ export interface ISchoolStaff {
     readonly email: string;
     readonly mobile: IMobile;
     readonly nin: string;
+    readonly isActive: boolean;
     readonly isDeleted: boolean;
   }

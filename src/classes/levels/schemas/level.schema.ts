@@ -39,6 +39,9 @@ export class Level {
   })
   arms: ArmForLevel[];
 
+  @Prop({ default: true })
+  isActive: boolean;
+
   @Prop({ default: false })
   isDeleted: boolean;
 

@@ -53,6 +53,9 @@ export class SchoolStaff {
     @Prop({ required: true })
     nin: string;
 
+    @Prop({ default: true })
+    isActive: boolean;
+
     @Prop({ default: false })
     isDeleted: boolean;
 
